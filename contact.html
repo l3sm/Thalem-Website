@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Early Access – Thalem</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">Thalem</a>
+      <span class="menu-toggle" id="menuToggle">&#9776;</span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="thalem-armwrestling.html">Thalem Armwrestling</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Contact & Early Access -->
+  <section>
+    <div class="container">
+      <h2>Contact &amp; Early Access</h2>
+      <p>
+        We’re hand‑selecting committed athletes to help us refine Thalem
+        Armwrestling. If you’re passionate about armwrestling and want to
+        contribute to shaping this tool, apply below. For general enquiries,
+        you can also reach us directly at
+        <a href="mailto:contact@thalem.space">contact@thalem.space</a>.
+      </p>
+      <form class="contact-form" id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="sport">Main Sport</label>
+        <select id="sport" name="sport" required>
+          <option value="Armwrestling">Armwrestling</option>
+          <option value="Powerlifting">Powerlifting</option>
+          <option value="Bodybuilding">Bodybuilding</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="experience">Training Experience (years)</label>
+        <input type="number" id="experience" name="experience" min="0" step="0.1" required />
+
+        <label for="message">Why do you want to test Thalem?</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+        <div class="success-message" id="successMessage" style="display: none;">
+          Thank you for applying! We'll get back to you soon.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Thalem. All rights reserved.</p>
+  </footer>
+</body>
+</html>
