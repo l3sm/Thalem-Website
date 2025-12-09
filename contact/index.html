@@ -37,7 +37,8 @@
         can also email me directly at
         <a href="mailto:contact@thalem.space">contact@thalem.space</a>.
       </p>
-      <form class="contact-form" id="contactForm">
+      <form class="contact-form" id="contactForm" action="mailto:contact@thalem.space" method="POST" enctype="text/plain">
+        <input type="hidden" name="subject" value="Thalem Website Contact Form" />
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required />
 

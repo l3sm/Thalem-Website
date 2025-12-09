@@ -15,8 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contactForm');
   const successMessage = document.getElementById('successMessage');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
+    contactForm.addEventListener('submit', () => {
       // Show success message and reset form fields
       if (successMessage) {
         successMessage.style.display = 'block';
