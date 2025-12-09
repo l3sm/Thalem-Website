@@ -19,8 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (successMessage) {
         successMessage.style.display = 'block';
       }
-      // Delay clearing fields until after the browser serializes form data
-      setTimeout(() => contactForm.reset());
     });
   }
 });
