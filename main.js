@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const successMessage = document.getElementById('successMessage');
   if (contactForm) {
     contactForm.addEventListener('submit', () => {
-      // Show success message and reset form fields
       if (successMessage) {
         successMessage.style.display = 'block';
       }
-      contactForm.reset();
+      // Delay clearing fields until after the browser serializes form data
+      setTimeout(() => contactForm.reset());
     });
   }
 });
