@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thalem – Tools for Strength Athletes &amp; Armwrestlers</title>
+  <title data-i18n-key="metaTitle">Thalem ™ Tools for Strength Athletes &amp; Armwrestlers</title>
   <link rel="icon" type="image/png" href="/Images/favicon.png">
   <link rel="stylesheet" href="/styles.css" />
   <script defer src="/main.js"></script>
@@ -16,28 +16,30 @@
       <a href="/" class="brand">Thalem</a>
       <span class="menu-toggle" id="menuToggle">&#9776;</span>
       <ul class="nav-links" id="navLinks">
-        <li><a href="/" class="active">Home</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/roadmap/">Roadmap</a></li>
-        <li><a href="/thalem-armwrestling/">Thalem Armwrestling</a></li>
-        <li><a href="/contact/">Contact</a></li>
-        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/" class="active" data-i18n-key="navHome">Home</a></li>
+        <li><a href="/about/" data-i18n-key="navAbout">About</a></li>
+        <li><a href="/roadmap/" data-i18n-key="navRoadmap">Roadmap</a></li>
+        <li><a href="/thalem-armwrestling/" data-i18n-key="navApp">Thalem Armwrestling</a></li>
+        <li><a href="/contact/" data-i18n-key="navContact">Contact</a></li>
+        <li><a href="/privacy/" data-i18n-key="navPrivacy">Privacy</a></li>
       </ul>
+    </div>
+    <div class="lang-toggle" role="group" aria-label="Language switcher">
+      <button type="button" class="lang-btn active" data-lang="en" aria-label="English (USA flag)">🇺🇸</button>
+      <button type="button" class="lang-btn" data-lang="gr" aria-label="Ελληνικά (Greek flag)">🇬🇷</button>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <h1>Thalem – Tools for Strength Athletes &amp; Armwrestlers</h1>
-      <p>
-        I’m building Thalem because strength athletes deserve proper tools.
-        If you love training and want something built by someone who actually
-        trains too, you’re in the right place.
+      <h1 data-i18n-key="heroTitle">Thalem ™ Tools for Strength Athletes &amp; Armwrestlers</h1>
+      <p data-i18n-key="heroDescription">
+        I'm building Thalem because strength athletes deserve proper tools. If you love training and want something built by someone who actually trains too, you're in the right place.
       </p>
       <div class="cta-buttons">
-      <a href="/thalem-armwrestling/" class="btn">Learn About My App</a>
-      <a href="/contact/" class="btn">Join Early Testers</a>
+        <a href="/thalem-armwrestling/" class="btn" data-i18n-key="ctaApp">Learn About My App</a>
+        <a href="/contact/" class="btn" data-i18n-key="ctaContact">Join Early Testers</a>
       </div>
     </div>
   </section>
@@ -45,15 +47,12 @@
   <!-- What is Thalem -->
   <section>
     <div class="container">
-      <h2>What is Thalem?</h2>
-      <p>
-        Thalem is my personal project. I want to help armwrestlers and other strength
-        athletes track their training in a serious, structured way. Just proper logging and progress tracking.
+      <h2 data-i18n-key="whatTitle">What is Thalem?</h2>
+      <p data-i18n-key="whatParagraph1">
+        Thalem is my personal project. I want to help armwrestlers and other strength athletes track their training in a serious, structured way. Just proper logging and progress tracking.
       </p>
-      <p>
-        My goal is to help grow strength sports by making training more organised and
-        accessible, especially in a sport like armwrestling that doesn’t have many
-        good tools yet.
+      <p data-i18n-key="whatParagraph2">
+        My goal is to help grow strength sports by making training more organised and accessible, especially in a sport like armwrestling that doesn't have many good tools yet.
       </p>
     </div>
   </section>
@@ -61,31 +60,31 @@
   <!-- Features of Thalem Armwrestling -->
   <section>
     <div class="container">
-      <h2>Thalem Armwrestling App Features</h2>
+      <h2 data-i18n-key="featuresTitle">Thalem Armwrestling App Features</h2>
       <div class="cards">
         <div class="card">
-          <h3>Program Builder</h3>
-          <p>Create and customise armwrestling specific training programmes with ease.</p>
+          <h3 data-i18n-key="cardProgramTitle">Program Builder</h3>
+          <p data-i18n-key="cardProgramDesc">Create and customise armwrestling specific training programmes with ease.</p>
         </div>
         <div class="card">
-          <h3>Workout &amp; PR Logs</h3>
-          <p>Track reps, weights and personal records over time to monitor progress.</p>
+          <h3 data-i18n-key="cardLogsTitle">Workout &amp; PR Logs</h3>
+          <p data-i18n-key="cardLogsDesc">Track reps, weights and personal records over time to monitor progress.</p>
         </div>
         <div class="card">
-          <h3>Table Sparring Logs</h3>
-          <p>Record sparring sessions including opponents, rounds and results.</p>
+          <h3 data-i18n-key="cardSparTitle">Table Sparring Logs</h3>
+          <p data-i18n-key="cardSparDesc">Record sparring sessions including opponents, rounds and results.</p>
         </div>
         <div class="card">
-          <h3>Opponent Management</h3>
-          <p>Keep a list of opponents, track matches and analyse how you stack up.</p>
+          <h3 data-i18n-key="cardOppTitle">Opponent Management</h3>
+          <p data-i18n-key="cardOppDesc">Keep a list of opponents, track matches and analyse how you stack up.</p>
         </div>
         <div class="card">
-          <h3>Stats &amp; History</h3>
-          <p>Visualise your progress with charts and detailed historical data.</p>
+          <h3 data-i18n-key="cardStatsTitle">Stats &amp; History</h3>
+          <p data-i18n-key="cardStatsDesc">Visualise your progress with charts and detailed historical data.</p>
         </div>
         <div class="card">
-          <h3>Cosmetics Themes</h3>
-           <p>Personalise your app with sleek themes from the in-app shop.</p>
+          <h3 data-i18n-key="cardCosmeticTitle">Cosmetics Themes</h3>
+          <p data-i18n-key="cardCosmeticDesc">Personalise your app with sleek themes from the in-app shop.</p>
         </div>
       </div>
     </div>
@@ -94,27 +93,25 @@
   <!-- Pricing -->
   <section>
     <div class="container">
-      <h2>Pricing</h2>
-      <p>
-        I want to keep Thalem as affordable as possible. I’m just one person building
-        this, and I’d rather have more athletes using it than charge a big
-        subscription fee since the whole point of this project is to grow the sport.
+      <h2 data-i18n-key="pricingTitle">Pricing</h2>
+      <p data-i18n-key="pricingParagraph">
+        I want to keep Thalem as affordable as possible. I'm just one person building this, and I'd rather have more athletes using it than charge a big subscription fee since the whole point of this project is to grow the sport.
       </p>
       <div class="pricing-table">
         <div class="price-card">
-          <h3>Free</h3>
-          <p class="price">€0</p>
-          <p>Access to all core logging features supported by ads (planned).</p>
+          <h3 data-i18n-key="priceFreeTitle">Free</h3>
+          <p class="price" data-i18n-key="priceFreeValue">€0</p>
+          <p data-i18n-key="priceFreeDesc">Access to all core logging features supported by ads (planned).</p>
         </div>
         <div class="price-card">
-          <h3>Full</h3>
-          <p class="price">€3</p>
-          <p>One‑time purchase with no ads and full feature access.</p>
+          <h3 data-i18n-key="priceFullTitle">Full</h3>
+          <p class="price" data-i18n-key="priceFullValue">€3</p>
+          <p data-i18n-key="priceFullDesc">One-time purchase with no ads and full feature access.</p>
         </div>
         <div class="price-card">
-          <h3>Cosmetics</h3>
-           <p class="price">€0.50+</p>
-           <p>Optional themes and cosmetics to support my work on Thalem.</p>
+          <h3 data-i18n-key="priceCosmeticTitle">Cosmetics</h3>
+          <p class="price" data-i18n-key="priceCosmeticValue">€0.50+</p>
+          <p data-i18n-key="priceCosmeticDesc">Optional themes and cosmetics to support my work on Thalem.</p>
         </div>
       </div>
     </div>
@@ -123,11 +120,9 @@
   <!-- Languages -->
   <section>
     <div class="container">
-      <h2>Languages</h2>
-      <p>
-        Thalem Armwrestling will launch in English first. After release I plan to add
-        more languages like Greek, Russian and Hindi so more athletes can use the app
-        in their own language.
+      <h2 data-i18n-key="languagesTitle">Languages</h2>
+      <p data-i18n-key="languagesParagraph">
+        Thalem Armwrestling will launch in English first. After release I plan to add more languages like Greek, Russian and Hindi so more athletes can use the app in their own language.
       </p>
     </div>
   </section>
@@ -135,22 +130,20 @@
   <!-- Coming Soon -->
   <section>
     <div class="container" style="text-align: center;">
-      <h2>Coming Soon</h2>
-      <p>
-        Right now the app is in private testing while I polish features, fix bugs and
-        make sure everything feels solid.
+      <h2 data-i18n-key="comingTitle">Coming Soon</h2>
+      <p data-i18n-key="comingParagraph1">
+        Right now the app is in private testing while I polish features, fix bugs and make sure everything feels solid.
       </p>
-      <p>
-        If you want to be one of the first people to try Thalem Armwrestling and give
-        feedback, you can join the early testers programme.
+      <p data-i18n-key="comingParagraph2">
+        If you want to be one of the first people to try Thalem Armwrestling and give feedback, you can join the early testers programme.
       </p>
-        <a href="/contact/" class="btn">Join Early Testers</a>
+      <a href="/contact/" class="btn" data-i18n-key="comingButton">Join Early Testers</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Thalem. All rights reserved.</p>
+    <p data-i18n-key="footerText">&copy; 2025 Thalem. All rights reserved.</p>
   </footer>
 </body>
 </html>
